@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Menu from './components/navbar';
+import Collections from './components/collection';
 
 export default function page() {
   // Définissez les fonctions onClick pour chaque élément du menu
@@ -47,7 +48,7 @@ export default function page() {
   return (
     <div>
       <Menu items={menuItems} backgroundColor="white" />
-      {/* Ajoutez ici d'autres composants ou contenu de la page */}
+      <Collections/>
     </div>
   );
 }
