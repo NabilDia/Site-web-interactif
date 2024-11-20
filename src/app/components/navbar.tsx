@@ -1,4 +1,4 @@
-// Menu.tsx
+// navbar.tsx
 import React from 'react';
 import { AppBar, Toolbar, Button, Box } from '@mui/material';
 
@@ -12,7 +12,7 @@ interface MenuProps {
   backgroundColor?: string; // Pour personnaliser la couleur d'arrière-plan
 }
 
-export default function Menu({ items, backgroundColor = 'white' }: MenuProps) {
+export default function Navbar({ items, backgroundColor = 'white' }: MenuProps) {
   return (
     <AppBar position="static" style={{ backgroundColor, color: 'black' }}>
       <Toolbar>
