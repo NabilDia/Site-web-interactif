@@ -1,5 +1,11 @@
 import React from 'react';
-import { Box, Typography, Link } from '@mui/material';
+import { Box, Typography } from '@mui/material';
+import CreditCardIcon from '@mui/icons-material/CreditCard'; // Exemple pour carte de crédit
+import AppleIcon from '@mui/icons-material/Apple'; // Exemple pour Apple Pay
+import GoogleIcon from '@mui/icons-material/Google'; // Exemple pour Google Pay (utilisation approximative)
+import LocalAtmIcon from '@mui/icons-material/LocalAtm'; // Exemple générique pour paiement
+import InstagramIcon from '@mui/icons-material/Instagram'; // Icône Instagram
+import FacebookIcon from '@mui/icons-material/Facebook'; // Icône Facebook
 
 export default function Footer() {
   return (
@@ -30,7 +36,7 @@ export default function Footer() {
               color: 'black',
             }}
           >
-            IG {/* Placeholder pour Instagram */}
+            <InstagramIcon sx={{ fontSize: 30 }} /> {/* Icône Instagram */}
           </Box>
           <Box
             sx={{
@@ -44,7 +50,7 @@ export default function Footer() {
               color: 'black',
             }}
           >
-            FB {/* Placeholder pour Facebook */}
+            <FacebookIcon sx={{ fontSize: 30 }} /> {/* Icône Facebook */}
           </Box>
         </Box>
       </Box>
@@ -83,6 +89,14 @@ export default function Footer() {
         </Box>
       </Box>
 
+      {/* Icônes des options de paiement */}
+      <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center', gap: 2 }}>
+        <CreditCardIcon sx={{ fontSize: 40, color: 'white' }} /> {/* Exemple pour carte de crédit */}
+        <AppleIcon sx={{ fontSize: 40, color: 'white' }} /> {/* Exemple pour Apple Pay */}
+        <GoogleIcon sx={{ fontSize: 40, color: 'white' }} /> {/* Exemple pour Google Pay */}
+        <LocalAtmIcon sx={{ fontSize: 40, color: 'white' }} /> {/* Exemple générique pour paiement */}
+      </Box>
+
       {/* Copyright */}
       <Box sx={{ mt: 4 }}>
         <Typography variant="body2" color="gray">
@@ -91,4 +105,4 @@ export default function Footer() {
       </Box>
     </Box>
   );
-};
+}
