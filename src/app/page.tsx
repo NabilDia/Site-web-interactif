@@ -6,6 +6,8 @@ import { Box, Typography } from '@mui/material';
 import Caroussel from './components/carroussel';
 import Footer from './components/Footer';
 import Newsletter from './components/Newsletter';
+import Middle from './components/Middle';
+import Info from './components/Info';
 
 export default function Page() {
   return (
@@ -17,7 +19,9 @@ export default function Page() {
       </Box>
       <Navbar items={menuItems} backgroundColor="white" />
       <Caroussel />
+      <Middle />
       <Newsletter />
+      <Info />
       <Footer />
     </>
   );
