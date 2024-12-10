@@ -1,3 +1,4 @@
+// page.tsx
 'use client';
 import React from 'react';
 import Navbar from './components/navbar';
@@ -8,6 +9,10 @@ import Footer from './components/Footer';
 import Newsletter from './components/Newsletter';
 import Middle from './components/Middle';
 import Info from './components/Info';
+import Best from './components/best';
+import {bestSellingItems} from './components/bestmenu';
+
+
 
 export default function Page() {
   return (
@@ -19,6 +24,7 @@ export default function Page() {
       </Box>
       <Navbar items={menuItems} backgroundColor="white" />
       <Caroussel />
+      <Best items={bestSellingItems} /> {/* Passez la prop items ici */}
       <Middle />
       <Newsletter />
       <Info />

@@ -16,8 +16,8 @@ export default function Middle({
     description = "Shop jewelleries, bags and creative accessories from the best African designers.",
     buttonText = "SHOP NOW",
     images = [
-        "/IMG_3375.JPG",
-        "/IMG_3376.JPG"
+        "https://via.placeholder.com/300",
+        "https://via.placeholder.com/300"
     ],
     textColor = "#fff", 
     backgroundColor = "#000", 

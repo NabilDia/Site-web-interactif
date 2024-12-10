@@ -19,7 +19,7 @@ export default function Caroussel() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '400px', // Ajustez la hauteur selon vos besoins
+            height: '900px', // Ajustez la hauteur selon vos besoins
           }}
         >
           <Image
