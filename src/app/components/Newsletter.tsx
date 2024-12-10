@@ -20,9 +20,9 @@ export default function Newsletter({
   placeholder = "youremail@mail.com",
   buttonText = "Join",
   images = [
-    "/IMG_3375.JPG",
-    "/IMG_3376.JPG",
-    "/IMG_3377.JPG"
+    "https://via.placeholder.com/300",
+    "https://via.placeholder.com/300",
+    "https://via.placeholder.com/300"
   ], // Les images que vous avez téléchargées
   textColor = "black", // texte par défaut noir
   backgroundColor = "#f9f9f9",
