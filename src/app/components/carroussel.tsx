@@ -1,9 +1,9 @@
-'use client'; // Si vous utilisez Next.js App Router
-import React from 'react';
-import Carousel from 'react-material-ui-carousel';
-import { Paper, Box } from '@mui/material';
-import Image from 'next/image'; // Import Next.js Image
-import getCarouselItems from './carrousselItems';
+"use client"; // Si vous utilisez Next.js App Router
+import React from "react";
+import Carousel from "react-material-ui-carousel";
+import { Paper, Box } from "@mui/material";
+import Image from "next/image"; // Import Next.js Image
+import getCarouselItems from "./carrousselItems";
 
 export default function Caroussel() {
   const items = getCarouselItems();
@@ -15,11 +15,11 @@ export default function Caroussel() {
           key={i}
           elevation={3}
           sx={{
-            position: 'relative',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '900px', // Ajustez la hauteur selon vos besoins
+            position: "relative",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "900px", // Ajustez la hauteur selon vos besoins
           }}
         >
           <Image
@@ -31,11 +31,11 @@ export default function Caroussel() {
           />
           <Box
             sx={{
-              position: 'absolute',
-              color: 'white',
-              textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-              fontSize: '2rem',
-              fontWeight: 'bold',
+              position: "absolute",
+              color: "white",
+              textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+              fontSize: "2rem",
+              fontWeight: "bold",
             }}
           >
             {item.name}

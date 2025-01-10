@@ -1,17 +1,7 @@
-import React from 'react';
-import { Box, Typography, TextField, Button } from '@mui/material';
-
+import React from "react";
+import { Box, Typography, TextField, Button } from "@mui/material";
+import { NewsletterProps } from "@/Interface/types";
 // Interface pour les props
-interface NewsletterProps {
-  title?: string;
-  description?: string;
-  placeholder?: string;
-  buttonText?: string;
-  images?: string[]; // tableau d'images
-  textColor?: string;
-  backgroundColor?: string;
-  buttonColor?: string;
-}
 
 // Composant fonctionnel avec des valeurs par défaut
 export default function Newsletter({
@@ -22,7 +12,7 @@ export default function Newsletter({
   images = [
     "https://via.placeholder.com/300",
     "https://via.placeholder.com/300",
-    "https://via.placeholder.com/300"
+    "https://via.placeholder.com/300",
   ], // Les images que vous avez téléchargées
   textColor = "black", // texte par défaut noir
   backgroundColor = "#f9f9f9",
@@ -32,8 +22,8 @@ export default function Newsletter({
     <Box
       sx={{
         backgroundColor: backgroundColor,
-        padding: '40px 20px',
-        textAlign: 'center',
+        padding: "40px 20px",
+        textAlign: "center",
       }}
     >
       {/* Texte principal */}
@@ -47,11 +37,11 @@ export default function Newsletter({
       {/* Champ d'inscription */}
       <Box
         sx={{
-          display: 'flex',
-          justifyContent: 'center',
+          display: "flex",
+          justifyContent: "center",
           gap: 1,
-          maxWidth: '500px',
-          margin: '0 auto',
+          maxWidth: "500px",
+          margin: "0 auto",
         }}
       >
         <TextField
@@ -60,12 +50,16 @@ export default function Newsletter({
           placeholder={placeholder}
           sx={{
             flexGrow: 1,
-            backgroundColor: 'white',
+            backgroundColor: "white",
           }}
         />
         <Button
           variant="contained"
-          sx={{ backgroundColor: buttonColor, color: 'white', padding: '10px 20px' }}
+          sx={{
+            backgroundColor: buttonColor,
+            color: "white",
+            padding: "10px 20px",
+          }}
         >
           {buttonText}
         </Button>
@@ -75,12 +69,12 @@ export default function Newsletter({
       {images.length > 0 && (
         <Box
           sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
             gap: 2,
             mt: 4,
-            flexWrap: 'wrap',
+            flexWrap: "wrap",
           }}
         >
           {images.map((imgSrc, index) => (
@@ -89,7 +83,7 @@ export default function Newsletter({
               component="img"
               src={imgSrc}
               alt={`Newsletter image ${index + 1}`}
-              sx={{ width: { xs: '100%', sm: '30%' }, borderRadius: '10px' }}
+              sx={{ width: { xs: "100%", sm: "30%" }, borderRadius: "10px" }}
             />
           ))}
         </Box>
