@@ -59,3 +59,8 @@ export interface Item {
 export interface BestProps {
   items: Item[];
 }
+
+export interface ITache extends Document {
+  texte: string;
+  fait: boolean;
+}

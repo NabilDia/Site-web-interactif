@@ -2,19 +2,19 @@ export const bestSellingItems = [
   {
     id: 1,
     title: "Produit 1",
-    image: "https://via.placeholder.com/300",
+    image: "moto.jpg",
     link: "/produit1",
   },
   {
     id: 2,
     title: "Produit 2",
-    image: "https://via.placeholder.com/300",
+    image: "Loup.jpg",
     link: "/produit2",
   },
   {
     id: 3,
     title: "Produit 3",
-    image: "https://via.placeholder.com/300",
+    image: "Vache.jpg",
     link: "/produit3",
   },
 ];

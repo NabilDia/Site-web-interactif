@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
-import { MiddleProps } from "@/Interface/types";
+import { MiddleProps } from "@/app/Interface/types";
 
 
 export default function Middle({
@@ -8,8 +8,8 @@ export default function Middle({
   description = "Shop jewelleries, bags and creative accessories from the best African designers.",
   buttonText = "SHOP NOW",
   images = [
-    "https://via.placeholder.com/300",
-    "https://via.placeholder.com/300",
+    "Loup.jpg",
+    "moto.jpg",
   ],
   textColor = "#fff",
   backgroundColor = "#000",

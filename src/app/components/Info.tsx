@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import LockIcon from "@mui/icons-material/Lock"; // Icône de sécurité
 import LocalShippingIcon from "@mui/icons-material/LocalShipping"; // Icône de livraison
 import ChatIcon from "@mui/icons-material/Chat"; // Icône de chat (service client)
-import {InfoSectionProps} from "@/Interface/types"
+import {InfoSectionProps} from "@/app/Interface/types"
 
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, TextField, Button } from "@mui/material";
-import { NewsletterProps } from "@/Interface/types";
+import { NewsletterProps } from "@/app/Interface/types";
 // Interface pour les props
 
 // Composant fonctionnel avec des valeurs par défaut
@@ -10,9 +10,9 @@ export default function Newsletter({
   placeholder = "youremail@mail.com",
   buttonText = "Join",
   images = [
-    "https://via.placeholder.com/300",
-    "https://via.placeholder.com/300",
-    "https://via.placeholder.com/300",
+    "moto.jpg",
+    "vache.jpg",
+    "loup.jpg",
   ], // Les images que vous avez téléchargées
   textColor = "black", // texte par défaut noir
   backgroundColor = "#f9f9f9",

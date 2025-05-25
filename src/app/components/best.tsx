@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import PropTypes from "prop-types";
-import {Item, BestProps} from "@/Interface/types"
+import {Item, BestProps} from "@/app/Interface/types"
 // Définition de l'interface pour les items
 
 export default function Best({ items }: BestProps) {

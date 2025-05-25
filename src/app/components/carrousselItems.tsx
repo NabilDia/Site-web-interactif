@@ -3,17 +3,17 @@ const carouselItems = [
   {
     name: "Saison des fêtes",
     description: "Profitez des meilleures offres pour la saison des fêtes",
-    image: "https://via.placeholder.com/600x400",
+    image: "/moto.jpg",
   },
   {
     name: "Black Friday",
     description: "Profitez des meilleures offres du Black Friday",
-    image: "https://via.placeholder.com/600x400",
+    image: "/vache.jpg",
   },
   {
     name: "Qualité au rendez-vous",
     description: "Profitez des meilleurs articles à des prix raisonnables",
-    image: "https://via.placeholder.com/600x400",
+    image: "/loup.jpg",
   },
 ];
 
