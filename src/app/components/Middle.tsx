@@ -8,8 +8,9 @@ export default function Middle({
   description = "Shop jewelleries, bags and creative accessories from the best African designers.",
   buttonText = "SHOP NOW",
   images = [
-    "Loup.jpg",
-    "moto.jpg",
+    "collier_argent_or.png",
+    "collier_or.png",
+    "collier_argent.png",
   ],
   textColor = "#fff",
   backgroundColor = "#000",
@@ -24,8 +25,8 @@ export default function Middle({
         backgroundImage:
           images.length === 2
             ? `url(${images[0]}), url(${images[1]})`
-            : `url(${images[0]})`,
-        backgroundSize: images.length === 2 ? "50% 100%, 50% 100%" : "cover",
+            : `url(${images[1]})`,
+        backgroundSize: images.length === 2 ? "40% 100%, 40% 100%" : "cover",
         backgroundPosition:
           images.length === 2 ? "left center, right center" : "center",
         backgroundRepeat: "no-repeat",
